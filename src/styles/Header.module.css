@@ -1,0 +1,37 @@
+*{
+    margin:0px;
+    padding:0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background:gray;
+}
+.header img{
+    width:70px;
+    height:70px;
+    border-radius:50px;
+}
+.leftside ul {
+   list-style: none;
+   display:flex;
+   align-items: center;
+}
+.leftside ul li{
+    padding:10px;
+    list-style: none;
+    display:block;
+}
+.leftside ul li a{
+    list-style: none;
+    color:white;
+    text-decoration: none;
+    padding:10px;
+}
+.leftside ul li:hover{
+    border-radius:10px;
+    background:rgb(82, 82, 82);
+    color:black;
+}

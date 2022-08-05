@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+//importing SPA Needs
+import { Switch , Route , Redirect } from 'react-router-dom';
+
+//importing Components
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import Landing from "./components/Landing";
+import Products from "./components/Products";
+import AboutUs from "./components/AboutUs";
+import NotFound from './components/NotFound';
+
+
+class App extends Component {
+  render() {
+    return (
+      <div>
+        <Header />
+        <Switch>
+          <Route path="/Products" component = {Products}/>
+          <Route path="/AboutUs" component = {AboutUs}/>
+          <Route path="/" component = {Landing}/>
+          <Route path="/notfound" component ={NotFound}/>
+          <Redirect to = "/notfound"/>
+        </Switch>
+        <Footer />
+      </div>
+    );
+  }
 }
 
 export default App;

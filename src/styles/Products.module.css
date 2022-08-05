@@ -1,0 +1,6 @@
+.store{
+    justify-content: center;
+    display:flex;
+    flex-wrap: wrap;
+    min-height: 100vh;
+}

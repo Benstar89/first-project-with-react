@@ -1,0 +1,16 @@
+.support{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0px;
+    text-align: center;
+}
+.logos img{
+    width:150px;
+    height:150px;
+    margin: 0 100px;
+}
+.logos{
+    margin:30px 0;
+    display:flex;
+}
